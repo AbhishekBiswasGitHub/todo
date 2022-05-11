@@ -1,0 +1,89 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 50%;
+    height: 80%;
+    min-width: 300px;
+    min-height: 400px;
+    border: 1px solid cyan;
+    border-radius: 1vw;
+    display: grid;
+    grid-template-rows: 50px auto 50px;
+    align-items: center;
+    justify-items: center;
+}
+
+.container h1 {
+    width: 90%;
+    text-align: center;
+    padding: 7px 0;
+    border-bottom: 1px solid cyan;
+}
+
+
+.todos {
+    width: 90%;
+    height: 90%;
+    list-style-type: none;
+    overflow-y: scroll;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.todos::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .todos {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+
+.todo-item {
+    width: 90%;
+    margin: 10px auto;
+    padding: 5px 10px;
+    border-left: 5px solid cyan;
+    cursor: pointer;
+}
+
+.todo-item:hover {
+    text-decoration: line-through;
+}
+
+.no-todo-item {
+    height: 100%;
+    text-align: center;
+    padding-top: 50%;
+}
+
+form {
+    width: 100%;
+}
+
+input[type="text"] {
+    width: 90%;
+    margin: 0 5% 15px;
+    padding: 5px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid cyan;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
